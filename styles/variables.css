@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+/* @import url(""); */
+@font-face {
+    font-family: 'Ostrich Sans';
+    src: url('../assets/fonts/OstrichSans-Bold.otf')   
+}
+:root{
+    --nameFont: "Ostrich Sans";
+    --mainFont: 'Montserrat', sans-serif;
+    --secondFont: 'Raleway', sans-serif;
+    --mainColor: #0aa9ed;
+    --mainColor1: #34c0fc;
+    --mainColor2: #7bd5fe;
+    --mainColor3: #b9e7fe;
+    --mainColor4: #dff2ff;
+    --mainColor5: #f0f9ff;
+    --mainColorDark: #0087cb;
+    --mainColorDark2: #006ca4;
+    --mainColorDark3: #055b87;
+    --mainColorDark4: #0a4b70;
+    --mainColorDark5: #07304a;
+    --secondColor: #272727;
+    --greenColor: #00C7A9;
+    --orangeColor: #FF9900;
+
+}

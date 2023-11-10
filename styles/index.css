@@ -1,0 +1,177 @@
+/* Import the variables */
+@import "./variables.css";
+@import "./presentation.css";
+@import "./aboutme.css";
+@import "./services.css";
+@import "./skills.css";
+@import "./portfolio.css";
+@import "./testimonials.css";
+@import "./contact.css";
+@import "./footer.css";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--secondFont);
+    /* overflow-x: hidden; */
+    background-color: var(--secondColor);
+    scroll-behavior: smooth;
+}
+
+button {
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--mainFont);
+    margin: 0;
+    color: white;
+}
+
+p {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* General Styles */
+.cl_sectionTitle {
+    font-size: 30px;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+    position: relative;
+    color: var(--mainColor3);
+    width: max-content;
+    text-align: center;
+}
+.cl_sectionTitle::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 40%;
+    background-color: var(--mainColor3);
+    margin-top: 5px;
+    
+}
+
+.cl_mainButton {
+    background: linear-gradient(135deg, var(--mainColor2) 0%, var(--mainColor) 100%);
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--mainColorDark5);
+}
+
+.cl_secondButton {
+    border: 1px solid var(--mainColor2);
+    border-radius: 8px;
+    padding: 10px;
+    color: var(--mainColor2);
+    background-color: transparent;
+}
+
+.cl_mainButton:hover,
+.cl_secondButton:hover {
+    cursor: pointer;
+}
+
+.cl_mainButton:hover {
+    background: linear-gradient(135deg, var(--mainColor3) 0%, var(--mainColor1) 100%);
+}
+
+.cl_secondButton:hover {
+    background-color: var(--mainColorDark5);
+}
+.cl_highlighted{
+    position: relative;
+    z-index: 2;
+}
+.cl_highlighted::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background: var(--mainColorDark2);
+    width: 100%;
+    height: 10px;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    /* right: 0; */
+}
+/* Header Styles */
+header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+header.cl_scrolled{
+    background-color: #262626;
+}
+
+header .cl_logo {
+    width: 20%;
+}
+
+header .cl_logo img {
+    width: 18%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-right: 20px;
+    position: relative;
+    padding-bottom: 8px;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0); */
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+header nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--mainColor3);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+
+}
+
+.cl_nav-active{
+    color: var(--mainColor1);
+}
+
+header nav ul li:hover::after {
+    width: 100%;
+}

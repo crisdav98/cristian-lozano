@@ -1,0 +1,91 @@
+#cl_contact {
+    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2f2f2f;
+    position: relative;
+    overflow: hidden;
+}
+#cl_contact > p {
+    width: 80%;
+    margin-bottom: 50px;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.cl_contact-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.cl_contact-container-info {
+    width: 50%;
+}
+
+.cl_contact-container-info-block {
+    margin-bottom: 30px;
+}
+
+.cl_contact-container-info-block h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cl_contact-container-info-socials{
+    margin-bottom: 20px;
+}
+.cl_contact-container-info-socials i {
+    color: white;
+    font-size: 25px;
+    margin-right: 8px;
+}
+.cl_contact-container-info-socials i:hover{
+    cursor: pointer;
+}
+.cl_contact-container-form input, .cl_contact-container-form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+}
+.cl_contact-container-form input:focus, .cl_contact-container-form textarea:focus{
+    outline: none;
+}
+.cl_contact-container-form button{
+    margin-top: 15px;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--mainColor);
+    color: white;
+    font-weight: bold;
+}
+.cl_contact-container-form button:hover{
+    cursor: pointer;
+    background-color: var(--mainColorDark);
+}
+
+#cl_contact .cl_bgbox1{
+    right: inherit;
+    top: inherit;
+    left: -40px;
+    bottom: -77px;
+    transform: rotate(300deg);
+    width: 280px;
+    background-color: #0aa9ed14;
+}
+#cl_contact .cl_bgbox6 {
+    background-color: #0aa9ed14;
+    bottom: inherit;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+
+
+}

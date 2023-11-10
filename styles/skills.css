@@ -1,0 +1,118 @@
+#cl_skills {
+    padding: 0 40px 120px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cl_skills-grid {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    /* grid-column-gap: 20px; */
+    /* grid-row-gap: 10px; */
+
+}
+
+.cl_skills-circularProgress {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    /* background-color: #333; */
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: all .2s ease;
+}
+.cl_skills-circularProgress-value{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background-color: rgba(29, 29, 29, 0.825);
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    display: none;
+}
+.cl_skills-circularProgress:hover .cl_skills-circularProgress-value{
+    display: flex;
+}
+
+.cl_skills-circularProgress img {
+    width: 42%;
+    position: relative;
+    z-index: 2;
+}
+.cl_skills-circularProgress-flutter img{
+    width: 52%;
+}
+.cl_skills-circularProgress-html img{
+    width: 50%;
+}
+.cl_skills-circularProgress-js img{
+    width: 40%;
+}
+.cl_skills-circularProgress-node img{
+    width: 80%;
+}
+
+
+.cl_skills-circularProgress::before {
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    background: var(--secondColor);
+    border-radius: 50%;
+    z-index: 1;
+}
+.cl_skills-circularProgress:hover{
+    cursor: pointer;
+}
+
+/* .cl_skills-circular-css:hover {
+    background: conic-gradient(var(--mainColor1) 320deg, #333 90deg);
+} */
+
+#cl_skills .cl_bgbox6{
+    background-color: #0aa9ed14;
+    bottom: inherit;
+    top: -50px;
+}
+#cl_skills .cl_bgbox5{
+    background-color: #0aa9ed14;
+    width: 60px;
+    bottom: 10px;
+    left: 30px;
+    transform: rotate(50deg);
+}
+#cl_skills .cl_bgbox8{
+    border-color: #0aa9ed14;
+    left: inherit;
+    right: 30px;
+    bottom: inherit;
+    top: 25px;
+}
+#cl_skills .cl_bgbox3{
+    background-color: #0aa9ed14;
+    width: 160px;
+    top: -100px;
+    left: 0;
+}
+#cl_skills .cl_bgbox4{
+    background-color: #0aa9ed14;
+    top: inherit;
+    bottom: 30px;
+    right: 0;
+    left: inherit;
+}

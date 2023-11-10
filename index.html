@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css" rel="stylesheet">
+
+    <script src="/scripts/header-script.js"></script>
+    <script src="/scripts/animation-writting.js"></script>
+    <script src="/scripts/animation-counter.js"></script>
+    <script src="/scripts/carrousel-script.js"></script>
+    <script src="/scripts/skills.js"></script>
+    <script src="/scripts/download-script.js"></script>
+    <script src="/scripts/send-email.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Precargar imagenes -->
+    <link rel="preload" as="image" type="image/webp" href="assets/image/cristian.webp">
+    <link rel="preload" as="image" type="image/webp" href="assets/image/developer2.webp">
+    <link rel="preload" as="image" type="image/webp" href="assets/skills/css.webp">
+    <link rel="preload" as="image" type="image/webp" href="assets/skills/flutter.webp">
+    <link rel="preload" as="image" type="image/webp" href="assets/skills/html.webp">
+    <link rel="preload" as="image" type="image/webp" href="assets/skills/js.webp">
+    <link rel="preload" as="image" type="image/webp" href="assets/skills/node.webp">
+    <link rel="preload" as="image" type="image/webp" href="assets/skills/react.webp">
+    <link rel="preload" as="image" type="image/webp" href="assets/skills/wordpress.webp">
+
+    <title>Cristian Lozano</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="cl_logo">
+            <img src="assets/logo/logo-white.png" alt="cristian Lozano">
+        </div>
+        <nav>
+            <ul>
+                <li><a data-scroll="cl_aboutme" href="#cl_aboutme">Sobre Mi</a></li>
+                <li><a data-scroll="cl_services" href="#cl_services">Servicios</a></li>
+                <li><a data-scroll="cl_skills" href="#cl_skills">Habilidades</a></li>
+                <li><a data-scroll="cl_portfolio" href="#cl_portfolio">Portafolio</a></li>
+                <li><a data-scroll="cl_testimonials" href="#cl_testimonials">Testimonios</a></li>
+                <li><a data-scroll="cl_contact" href="#cl_contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de presentación -->
+    <section id="cl_presentation">
+        <div class="cl_bgbox1 cl_geometry"></div>
+        <div class="cl_bgbox2 cl_geometry"></div>
+        <div class="cl_bgbox3 cl_geometry"></div>
+        <div class="cl_bgbox4 cl_geometry"></div>
+        <div class="cl_bgbox5 cl_geometry"></div>
+        <div class="cl_bgbox6 cl_geometry"></div>
+        <div class="cl_bgbox7 cl_geometry"></div>
+        <div class="cl_bgbox8 cl_geometry"></div>
+        <div class="cl_bgbox9 cl_geometry"></div>
+
+        <div class="cl_presentation-information">
+            <div class="cl_presentation-information-name">
+                <p>Hola, soy </p>
+                <h1 id="cl_name"></h1>
+            </div>
+            <div class="cl_presentation-information-welcome">
+                <p>Bienvenido a mi rincón en la web. Soy un apasionado <span class="cl_highlighted">desarrollador
+                        web</span>. Explora mi
+                    trabajo y descubre lo que puedo crear para ti.</p>
+            </div>
+            <div class="cl_presentation-information-experience">
+                <div>
+                    <p>+ <span id="cl_numexperience">0</span> </p>
+                    <p>años de experiencia</p>
+                </div>
+                <div>
+                    <p>+ <span id="cl_numprojects">0</span> </p>
+                    <p>proyectos creados</p>
+                </div>
+            </div>
+        </div>
+        <div class="cl_presentation-me">
+            <!-- CSS -->
+            <div class="cl_presentation-me-skill cl_presentation-me-skill-css">
+                <img src="assets/skills/css.webp" alt="css">
+            </div>
+            <!-- HTML -->
+            <div class="cl_presentation-me-skill cl_presentation-me-skill-html">
+                <img src="assets/skills/html.webp" alt="html">
+            </div>
+            <!-- NODEJS -->
+            <div class="cl_presentation-me-skill cl_presentation-me-skill-nodejs">
+                <img src="assets/skills/node.webp" alt="NodeJS">
+            </div>
+            <!-- JS -->
+            <div class="cl_presentation-me-skill cl_presentation-me-skill-js">
+                <img src="assets/skills/js.webp" alt="JS">
+            </div>
+            <!-- React -->
+            <div class="cl_presentation-me-skill cl_presentation-me-skill-react">
+                <img src="assets/skills/react.webp" alt="ReactJS">
+            </div>
+            <!-- Flutter -->
+            <div class="cl_presentation-me-skill cl_presentation-me-skill-flutter">
+                <img src="assets/skills/flutter.webp" alt="ReactJS">
+            </div>
+
+            <img src="assets/image/cristian.webp" alt="Cristian Lozano" class="cl_presentation-me-photo">
+        </div>
+    </section>
+
+    <!-- Sección Aceer de mi-->
+    <section id="cl_aboutme">
+        <div class="cl_bgbox1 cl_geometry"></div>
+        <div class="cl_bgbox4 cl_geometry"></div>
+        <div class="cl_bgbox9 cl_geometry"></div>
+        <div class="cl_bgbox5 cl_geometry"></div>
+        <h3 class="cl_sectionTitle">Sobre Mi</h3>
+
+        <p>Hace 4 años, comencé mi emocionante viaje en el desarrollo web y de aplicaciones móviles, una aventura en
+            constante evolución. Mi pasión radica en <span class="cl_highlighted">dar vida a ideas</span> en el mundo
+            digital, y disfruto cada paso del proceso. No hay nada como la satisfacción de ver a los <span
+                class="cl_highlighted">clientes impresionados</span> con el producto final. Cuando no estoy codificando,
+            me encanta explorar nuevas tecnologías y estar en <span class="cl_highlighted">constante
+                capacitación</span>.</p>
+
+        <div class="cl_aboutme-card">
+            <img src="assets/image/developer2.webp" alt="programming">
+            <div class="cl_aboutme-card-info">
+                <h2>Cristian Lozano</h2>
+                <p>Semi Senior Desarrollador Web</p>
+                <hr />
+                <div class="cl_aboutme-card-info-buttons">
+                    <button class="cl_mainButton"><a href="#cl_contact">Contactar</a></button>
+                    <button id="cl_downloadcv" class="cl_secondButton">Descargar CV</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section id="cl_services">
+        <h3 class="cl_sectionTitle">Mis servicios</h3>
+        <div class="cl_services-container swiper">
+            <div class="swiper-wrapper">
+                <div class="cl_services-carrousel-card swiper-slide">
+                    <img src="assets/icons/sitiio-web.webp" alt="desarrollo de sitios web">
+                    <h2>Sitios web</h2>
+                    <p>Desarrollo de sitios web de calidad, desde diseño creativo hasta implementación técnica.</p>
+                </div>
+                <div class="cl_services-carrousel-card swiper-slide">
+                    <img src="assets/icons/webapps.webp" alt="desarrollo de sitios web">
+                    <h2>Aplicaciones Web</h2>
+                    <p>Creación de aplicaciones web interactivas y dinámicas para diversos fines, como comercio
+                        electrónico, redes sociales, blogs y más</p>
+                </div>
+                <div class="cl_services-carrousel-card swiper-slide">
+                    <img src="assets/icons/androide.webp" alt="desarrollo de sitios web">
+                    <h2>Aplicaciones Móviles</h2>
+                    <p>Creación de aplicaciones móviles híbridas desarrolladas en Flutter.</p>
+                </div>
+                <div class="cl_services-carrousel-card swiper-slide">
+                    <img src="assets/icons/api.webp" alt="desarrollo de sitios web">
+                    <h2>APIs</h2>
+                    <p>Diseño y creación de APIs (Application Programming Interfaces) para permitir la comunicación
+                        entre diferentes aplicaciones y servicios.</p>
+                </div>
+                <div class="cl_services-carrousel-card swiper-slide">
+                    <img src="assets/icons/api_thrid.webp" alt="desarrollo de sitios web">
+                    <h2>Integración de APIs de Terceros</h2>
+                    <p> Integración de APIs de terceros en tus aplicaciones web y móviles para acceder a servicios
+                        externos y datos.</p>
+                </div>
+                <div class="cl_services-carrousel-card swiper-slide">
+                    <img src="assets/icons/mantenimiento.webp" alt="desarrollo de sitios web">
+                    <h2>Mantenimiento y Soporte</h2>
+                    <p>Ofrecer servicios de mantenimiento continuo, resolución de problemas y actualizaciones
+                        periódicas
+                        para sitios web y aplicaciones.</p>
+                </div>
+                <div class="cl_services-carrousel-card swiper-slide">
+                    <img src="assets/icons/cms.webp" alt="desarrollo de sitios web">
+                    <h2>Sistemas de Gestión de Contenido (CMS)</h2>
+                    <p>Creación de sitios web personalizados basados en CMS populares como WordPress.</p>
+                </div>
+                <div class="cl_services-carrousel-card swiper-slide">
+                    <img src="assets/icons/consultoria.webp" alt="desarrollo de sitios web">
+                    <h2>Consultoría en Tecnología</h2>
+                    <p>Proporcionar asesoramiento en la selección de tecnologías, arquitectura de sistemas y
+                        estrategias
+                        de desarrollo.</p>
+                </div>
+                <div class="cl_services-carrousel-card swiper-slide">
+                    <img src="assets/icons/plugins.webp" alt="desarrollo de sitios web">
+                    <h2>Plugins</h2>
+                    <p>Creación de extensiones y plugins personalizados para ampliar la funcionalidad de sistemas
+                        existentes.</p>
+                </div>
+                <div class="cl_services-carrousel-card swiper-slide">
+                    <img src="assets/icons/automatizacion.webp" alt="desarrollo de sitios web">
+                    <h2>Automatización de Procesos</h2>
+                    <p>Desarrollo de soluciones para automatizar tareas y procesos empresariales.</p>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Skills -->
+    <section id="cl_skills">
+        <div class="cl_bgbox6 cl_geometry"></div>
+        <div class="cl_bgbox5 cl_geometry"></div>
+        <div class="cl_bgbox8 cl_geometry"></div>
+        <div class="cl_bgbox3 cl_geometry"></div>
+        <div class="cl_bgbox4 cl_geometry"></div>
+        <h3 class="cl_sectionTitle">Habilidades</h3>
+        <div class="cl_skills-grid">
+            <div class="cl_skills-circularProgress" data-value="88">
+                <img src="assets/skills/css.webp" alt="CSS skill">
+                <div class="cl_skills-circularProgress-value">88 %</div>
+            </div>
+
+            <div class="cl_skills-circularProgress cl_skills-circularProgress-flutter" data-value="50">
+                <img src="assets/skills/flutter.webp" alt="Flutter skill">
+                <div class="cl_skills-circularProgress-value">50 %</div>
+            </div>
+
+            <div class="cl_skills-circularProgress cl_skills-circularProgress-html" data-value="90">
+                <img src="assets/skills/html.webp" alt="HTML skill">
+                <div class="cl_skills-circularProgress-value">90 %</div>
+            </div>
+
+            <div class="cl_skills-circularProgress cl_skills-circularProgress-js" data-value="75">
+                <img src="assets/skills/js.webp" alt="js skill">
+                <div class="cl_skills-circularProgress-value">75 %</div>
+            </div>
+
+            <div class="cl_skills-circularProgress cl_skills-circularProgress-node" data-value="62">
+                <img src="assets/skills/node.webp" alt="Node skill">
+                <div class="cl_skills-circularProgress-value">62 %</div>
+            </div>
+            <div class="cl_skills-circularProgress cl_skills-circularProgress-react" data-value="88">
+                <img src="assets/skills/react.webp" alt="React skill">
+                <div class="cl_skills-circularProgress-value">88 %</div>
+            </div>
+            <div class="cl_skills-circularProgress cl_skills-circularProgress-react" data-value="40">
+                <img src="assets/skills/wordpress.webp" alt="Wordpress skill">
+                <div class="cl_skills-circularProgress-value">40 %</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="cl_portfolio">
+        <div class="cl_bgbox5 cl_geometry"></div>
+        <div class="cl_bgbox9 cl_geometry"></div>
+        <div class="cl_bgbox7 cl_geometry"></div>
+        <div class="cl_portfolio-container">
+            <div class="cl_portfolio-container-description">
+                <h3 class="cl_sectionTitle">Mis proyectos</h3>
+                <p>Descubre mi portafolio de proyectos digitales que abarcan algunas aplicaciones web y aplicaciones
+                    móviles. Explora cómo he ayudado a otros a alcanzar sus objetivos digitales y cómo puedo hacer lo
+                    mismo por ti.</p>
+            </div>
+            <div class="cl_portfolio-projects">
+                <!-- Delivery Sistem -->
+                <div class="cl_portfolio-project cl_portfolio-motoclic">
+                    <div class="cl_portfolio-project-front">
+                        <img src="assets/projects/motoclic.webp" alt="Moto clic">
+                    </div>
+                    <div class="cl_portfolio-project-back">
+                        <h2>Moto clic</h2>
+                        <p>Sistema de delivery. Solicitud de pedidos a través de aplicación
+                            móvil, descargable desde la Playstore. CRM, donde se manejan los
+                            pedidos en tiempo real, historial, motorizados, restaurates.</p>
+                        <div class="cl_portfolio-project-skills">
+                            <span>ReactJS</span>
+                            <span>Firebase</span>
+                            <span>Flutter</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Track app -->
+                <div class="cl_portfolio-project cl_portfolio-trackapp">
+                    <div class="cl_portfolio-project-front">
+                        <img src="assets/projects/track.webp" alt="Moto clic">
+                    </div>
+                    <div class="cl_portfolio-project-back">
+                        <h2>Person track</h2>
+                        <p>Sistema de rastreo. Aplicación móvil que rastrea en tiempo real el movimiento de una persona
+                            u objeto, en la cual se puede observar la posición actual dentro de un mapa</p>
+                        <div class="cl_portfolio-project-skills">
+                            <span>Firebase</span>
+                            <span>Flutter</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sigma Network -->
+                <div class="cl_portfolio-project cl_portfolio-sigma">
+                    <div class="cl_portfolio-project-front">
+                        <img src="assets/projects/sigma.webp" alt="Sigma Network">
+                    </div>
+                    <div class="cl_portfolio-project-back">
+                        <h2>Sigma Network</h2>
+                        <p>Página web para empresa network local. Proyecto que se encuentra en proceso</p>
+                        <div class="cl_portfolio-project-skills">
+                            <span>Wordpress</span>
+                        </div>
+                        <div class="cl_portfolio-project-linkcontainer">
+                            <a class="cl_portfolio-linkvisit" href="https://ec-sigma.com/" target="_blank">Visitar
+                                sitio</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vono app -->
+                <div class="cl_portfolio-project cl_portfolio-vono">
+                    <div class="cl_portfolio-project-front">
+                        <img src="assets/projects/vono.webp" alt="Vono">
+                    </div>
+                    <div class="cl_portfolio-project-back">
+                        <h2>Vono</h2>
+                        <p>Sistema completo de delivery. Implica aplicación móvil para usuarios, aplicación móvil para
+                            motorizado y CRM para administradores</p>
+                        <div class="cl_portfolio-project-skills">
+                            <span>Firebase</span>
+                            <span>Flutter</span>
+                            <span>ReactJS</span>
+                            <span>NextJS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Uber app -->
+                <div class="cl_portfolio-project cl_portfolio-uber">
+                    <div class="cl_portfolio-project-front">
+                        <img src="assets/projects/uber.webp" alt="Movilidad Reina del Cisne">
+                    </div>
+                    <div class="cl_portfolio-project-back">
+                        <h2>Movilidad Reina De El Cisne</h2>
+                        <p>Proyecto tipo Uber. Incluye aplicación móvil para usuario y aplicación móvil para los
+                            conductores, el cual incluye un taximetro y seguimiento en tiempo real</p>
+                        <div class="cl_portfolio-project-skills">
+                            <span>NodeJS</span>
+                            <span>ExpressJS</span>
+                            <span>Flutter</span>
+                            <span>Flutter Web</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- CA app -->
+                <div class="cl_portfolio-project cl_portfolio-copyAssistant">
+                    <div class="cl_portfolio-project-front">
+                        <img src="assets/projects/logo-sidebar.svg" alt="Copy Assistant">
+                    </div>
+                    <div class="cl_portfolio-project-back">
+                        <h2>CopyAssistant</h2>
+                        <p>Desarrollo de front end. Software que usa inteligencia artificial para crear copys de acuerdo
+                            a ciertos templates, con la opción de organizarl los copys por poryectos.</p>
+                        <p class="cl_portfolio-project-bussiness">Empresa: <a href="https://conviertemas.com/">Convierte
+                                Mas</a></p>
+                        <div class="cl_portfolio-project-linkcontainer">
+                            <a class="cl_portfolio-linkvisit" href="https://app.copyassistant.ai/"
+                                target="_blank">Visitar
+                                software</a>
+                        </div>
+                        <div class="cl_portfolio-project-skills">
+                            <span>ReactJS</span>
+                            <span>Redux</span>
+                            <span>Hooks</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vilma Ai app -->
+                <div class="cl_portfolio-project cl_portfolio-vilmaai">
+                    <div class="cl_portfolio-project-front">
+                        <img src="assets/projects/vilmaai.svg" alt="Vilma AI">
+                    </div>
+                    <div class="cl_portfolio-project-back">
+                        <h2>Vilma AI </h2>
+                        <p>Desarrollo de front end. Software que usa inteligencia artificial para crear copys de acuerdo
+                            a un área y opción de chatear con un consultor experto usando la inteligencia artificial</p>
+                        <p class="cl_portfolio-project-bussiness">Empresa: <a href="https://conviertemas.com/">Convierte
+                                Mas</a></p>
+                        <div class="cl_portfolio-project-linkcontainer">
+                            <a class="cl_portfolio-linkvisit" href="https://app.vilma.ai/" target="_blank">Visitar
+                                software</a>
+                        </div>
+                        <div class="cl_portfolio-project-skills">
+                            <span>ReactJS</span>
+                            <span>Redux</span>
+                            <span>Hooks</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Spacegram app -->
+                <div class="cl_portfolio-project cl_portfolio-spacegram">
+                    <div class="cl_portfolio-project-front">
+                        <img src="assets/projects/spacegram.webp" alt="Spacegram">
+                    </div>
+                    <div class="cl_portfolio-project-back">
+                        <h2>Spacegram App </h2>
+                        <p>Desarrollo de aplicaicón móvil de Spacegram. Diseña textos para redes sociales, guarda notas
+                            con el texto que se usa en publicaciones y los copia en portapapeles con estilo</p>
+                        <p class="cl_portfolio-project-bussiness">Empresa: <a href="https://conviertemas.com/">Convierte
+                                Mas</a></p>
+                        <div class="cl_portfolio-project-linkcontainer">
+                            <a class="cl_portfolio-linkvisit" href="https://triunfagram.com/spacegram/"
+                                target="_blank">Visitar
+                                software</a>
+                        </div>
+                        <div class="cl_portfolio-project-skills">
+                            <span>Flutter</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="cl_testimonials">
+        <h3 class="cl_sectionTitle">Testimonios</h3>
+        <div class="cl_testimonials-container">
+            <div class="cl_testimonials-card">
+                <div class="cl_testimonials-card-icon">
+                    <i class="ri-double-quotes-l"></i>
+                </div>
+                <h4>Manuel Toledo</h4>
+                <span class="cl_testimonials-card-position">CEO Apphive</span>
+                <div class="cl_testimonials-card-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <p>Cristian se destacó por su profesionalismo, compromiso y habilidades técnicas, lo que lo convirtió en
+                    un miembro valioso del equipo, capaz de abordar desafíos complejos con éxito.</p>
+            </div>
+            <div class="cl_testimonials-card">
+                <div class="cl_testimonials-card-icon">
+                    <i class="ri-double-quotes-l"></i>
+                </div>
+                <h4>Ec. Alien Martínez</h4>
+                <span class="cl_testimonials-card-position">Director de Tecnología e Innovación Grupo Convierte
+                    Más</span>
+                <div class="cl_testimonials-card-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <p>Cristian es un profesional excepcional como desarrollador. Su habilidad técnica, compromiso y
+                    versatilidad son notables. Siempre se adapta y aporta soluciones efectivas.</p>
+            </div>
+            <div class="cl_testimonials-card">
+                <div class="cl_testimonials-card-icon">
+                    <i class="ri-double-quotes-l"></i>
+                </div>
+                <h4>Santiago Moreno</h4>
+                <span class="cl_testimonials-card-position">Front end Developer</span>
+                <div class="cl_testimonials-card-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <p>Cristian es un compañero confiable y competente en proyectos web desafiantes. Su pasión por el
+                    desarrollo web es inspiradora.</p>
+            </div>
+            <div class="cl_testimonials-card">
+                <div class="cl_testimonials-card-icon">
+                    <i class="ri-double-quotes-l"></i>
+                </div>
+                <h4>Cinthya Avendaño</h4>
+                <span class="cl_testimonials-card-position">ux/ui Designer</span>
+                <div class="cl_testimonials-card-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <p> Su sólido conocimiento técnico y su comprensión de UX/UI se combinan de manera brillante. Es un
+                    recurso valioso que garantiza experiencias excepcionales para los usuarios</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="cl_contact">
+        <div class="cl_bgbox1 cl_geometry"></div>
+        <div class="cl_bgbox6 cl_geometry"></div>
+        <h3 class="cl_sectionTitle">Contacto</h3>
+        <p>Mi objetivo es ser tu socio en el mundo digital. Si tienes una idea que te apasiona o un proyecto que
+            necesita un toque tecnológico, estoy aquí para ayudarte. ¡Juntos, podemos llevar tu visión al siguiente
+            nivel digital! Así que, ¿por qué no hablamos y comenzamos a dar vida a tus ideas? Estoy ansioso por
+            escucharte y ser parte de tu emocionante viaje digital.</p>
+        <div class="cl_contact-container">
+            <div class="cl_contact-container-info">
+                <div class="cl_contact-container-info-block">
+                    <h4>E-mail</h4>
+                    <p><i class="ri-mail-line"></i> crisdavloz98@gmail.com</p>
+                </div>
+                <div class="cl_contact-container-info-block">
+                    <h4>Teléfono</h4>
+                    <p><i class="ri-phone-line"></i> <a
+                            href="https://wa.me/593988568112?text=Hola,%20estoy%20interesado%20en%20trabajar%20contigo.%20%C2%BFPodemos%20discutir%20detalles%20y%20posibilidades?"
+                            target="_blank">+593 988568112</a></p>
+                </div>
+                <div class="cl_contact-container-info-block cl_contact-container-info-socials">
+                    <h4>Redes Sociales</h4>
+                    <a href="https://github.com/crisdav98" target="_blank"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/cristian-lozano-4bb51b1b6/" target="_blank"><i
+                            class="ri-linkedin-box-fill"></i></a>
+                </div>
+
+            </div>
+            <div class="cl_contact-container-form">
+                <input type="text" name="name" id="cl_name" placeholder="Nombre" required>
+                <input type="email" name="email" id="cl_email" placeholder="E-mail" required>
+                <textarea name="message" id="cl_message" rows="10" placeholder="Mensaje" required></textarea>
+                <div id="cl_contact-message"></div>
+                <button onclick="senEmail()">Enviar</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <div class="cl_footer-logo">
+                <img src="assets/logo/logo-completo-white.png" alt="Cristian Lozano">
+            </div>
+            <div class="cl_footer-reserved">
+                <p>Copywriting &copy; 2023. All rigth reserved</p>
+            </div>
+        </div>
+        <div class="cl_footer-socials">
+            <a href="https://github.com/crisdav98" target="_blank"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/cristian-lozano-4bb51b1b6/" target="_blank"><i
+                    class="ri-linkedin-box-fill"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

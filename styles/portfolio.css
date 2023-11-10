@@ -1,0 +1,219 @@
+#cl_portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 40px;
+    background-color: #2f2f2f;
+}
+
+.cl_portfolio-container {
+    display: flex;
+    align-items: center;
+}
+
+.cl_portfolio-container-description {
+    width: 40%;
+    box-sizing: border-box;
+    padding-right: 30px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.cl_portfolio-container-description p {
+    line-height: 1.5em;
+    margin-top: -20px;
+}
+
+.cl_portfolio-projects {
+    flex: 1;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    row-gap: 20px;
+}
+
+.cl_portfolio-project {
+    /* background-color: blue; */
+    min-height: 350px;
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cl_portfolio-project:hover {
+    cursor: pointer;
+}
+
+.cl_portfolio-project:hover .cl_portfolio-project-front {
+    transform: rotateY(180deg);
+}
+
+.cl_portfolio-project:hover .cl_portfolio-project-back {
+    transform: rotateY(0deg);
+}
+
+.cl_portfolio-project-front,
+.cl_portfolio-project-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+    border-radius: 8px;
+}
+
+.cl_portfolio-project-front {
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.cl_portfolio-project-back {
+    background: var(--mainColorDark4);
+    padding: 10px;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+}
+
+.cl_portfolio-project-back h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    text-align: center;
+    color: var(--greenColor);
+}
+
+.cl_portfolio-project-back p {
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cl_portfolio-project-skills {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cl_portfolio-project-skills span {
+    background-color: var(--mainColor2);
+    border-radius: 8px;
+    padding: 5px 8px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.cl_portfolio-motoclic .cl_portfolio-project-front {
+    background-color: rgb(255, 208, 0);
+}
+
+.cl_portfolio-motoclic:hover {
+    cursor: pointer;
+}
+
+.cl_portfolio-trackapp .cl_portfolio-project-front {
+    background-color: rgb(0, 157, 255);
+}
+
+.cl_portfolio-trackapp .cl_portfolio-project-front img {
+    width: 100%;
+}
+
+.cl_portfolio-sigma .cl_portfolio-project-front {
+    background-color: rgb(232, 232, 232);
+}
+
+.cl_portfolio-sigma .cl_portfolio-project-front img {
+    width: 80%;
+}
+
+.cl_portfolio-project-linkcontainer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cl_portfolio-linkvisit {
+    color: #333;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.cl_portfolio-vono .cl_portfolio-project-front {
+    background-color: white;
+}
+
+.cl_portfolio-vono .cl_portfolio-project-front img {
+    width: 90%;
+}
+
+.cl_portfolio-uber .cl_portfolio-project-front {
+    background-color: #fdcae1;
+}
+
+.cl_portfolio-uber .cl_portfolio-project-front img {
+    width: 70%;
+}
+
+.cl_portfolio-copyAssistant .cl_portfolio-project-front {
+    background-color: rgb(119, 161, 245);
+}
+
+.cl_portfolio-copyAssistant .cl_portfolio-project-front img {
+    width: 65%;
+}
+.cl_portfolio-project-bussiness {
+    margin-top: -10px;
+}
+.cl_portfolio-project-bussiness a{
+    color: white;
+    text-decoration: underline;
+}
+.cl_portfolio-copyAssistant .cl_portfolio-project-linkcontainer, .cl_portfolio-vilmaai .cl_portfolio-project-linkcontainer, .cl_portfolio-spacegram .cl_portfolio-project-linkcontainer{
+    margin-bottom: 20px;
+}
+.cl_portfolio-vilmaai .cl_portfolio-project-front {
+    background-color: rgb(144, 245, 119);
+}
+
+.cl_portfolio-vilmaai .cl_portfolio-project-front img {
+    width: 80%;
+}   
+.cl_portfolio-spacegram .cl_portfolio-project-front {
+    background-color: rgb(245, 226, 119);
+}
+
+.cl_portfolio-spacegram .cl_portfolio-project-front img {
+    width: 80%;
+}   
+
+#cl_portfolio .cl_bgbox5{
+    background-color: #0aa9ed14;
+    left: 70px;
+    bottom: 20%;
+}
+#cl_portfolio .cl_bgbox9{
+    border-color: #0aa9ed14;
+    left: 190px;
+    height: 80px;
+    width: 80px;
+    top: 10%;
+}
+#cl_portfolio .cl_bgbox7{
+    border-color: #0aa9ed14;
+    right: inherit;
+    top: 15%;
+    left: 190px;
+}

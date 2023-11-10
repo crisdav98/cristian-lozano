@@ -1,0 +1,308 @@
+/* Presentation Section */
+/* ?background Geometry styles */
+.cl_geometry {
+    position: absolute;
+}
+
+.cl_bgbox1,
+.cl_bgbox3 {
+    width: 200px;
+    aspect-ratio: 1;
+    clip-path: polygon(100.00% 50.00%, 65.45% 97.55%, 9.55% 79.39%, 9.55% 20.61%, 65.45% 2.45%, 100.00% 50.00%, calc(65.45% - 6.18px) calc(2.45% - -19.02px), calc(9.55% - -16.18px) calc(20.61% - -11.76px), calc(9.55% - -16.18px) calc(79.39% - 11.76px), calc(65.45% - 6.18px) calc(97.55% - 19.02px), calc(100.00% - 20.00px) calc(50.00% - 0.00px), calc(65.45% - 6.18px) calc(2.45% - -19.02px));
+}
+
+.cl_bgbox1 {
+    right: -90px;
+    top: 80px;
+    transform: rotate(45deg);
+    background-color: #3CB4EF;
+}
+
+.cl_bgbox3 {
+    background-color: #393939;
+    z-index: 1;
+    top: 50%;
+    left: -100px;
+    transform: rotate(35deg);
+}
+
+.cl_bgbox2 {
+    width: 140px;
+    aspect-ratio: 1;
+    clip-path: polygon(100.00% 50.00%, 75.00% 93.30%, 25.00% 93.30%, 0.00% 50.00%, 25.00% 6.70%, 75.00% 6.70%, 100.00% 50.00%, calc(75.00% - 12.00px) calc(6.70% - -20.78px), calc(25.00% - -12.00px) calc(6.70% - -20.78px), calc(0.00% - -24.00px) calc(50.00% - 0.00px), calc(25.00% - -12.00px) calc(93.30% - 20.78px), calc(75.00% - 12.00px) calc(93.30% - 20.78px), calc(100.00% - 24.00px) calc(50.00% - 0.00px), calc(75.00% - 12.00px) calc(6.70% - -20.78px));
+    right: 30px;
+    top: 100px;
+    z-index: 1;
+    background-color: #3CB4EF;
+}
+
+.cl_bgbox4 {
+    width: 60px;
+    aspect-ratio: 1;
+    clip-path: polygon(100.00% 50.00%, 25.00% 93.30%, 25.00% 6.70%);
+    background-color: #393939;
+    top: 80px;
+    left: 5%;
+    transform: rotate(55deg);
+}
+
+.cl_bgbox5 {
+    width: 90px;
+    aspect-ratio: 1;
+    clip-path: polygon(100.00% 50.00%, 50.00% 100.00%, 0.00% 50.00%, 50.00% 0.00%);
+    background-color: #393939;
+    bottom: 10%;
+    left: 15%;
+}
+
+.cl_bgbox6 {
+    width: 100px;
+    height: 100px;
+    background: #3CB4EF;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 5px;
+    z-index: 1;
+}
+
+.cl_bgbox7 {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #4ac1fc;
+    border-radius: 50%;
+    bottom: 120px;
+    right: 25px;
+    z-index: 1;
+}
+
+.cl_bgbox8 {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #393939;
+    border-radius: 50%;
+    bottom: 120px;
+    left: 35%;
+    z-index: 1;
+}
+
+.cl_bgbox9 {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #393939;
+    border-radius: 50%;
+    top: 80px;
+    left: 21%;
+    z-index: 1;
+}
+
+#cl_presentation {
+    /* margin-top: 78px; */
+    height: 100vh;
+    background: linear-gradient(to right, var(--secondColor) 70%, var(--mainColor) 30%);
+    /* background-size: 200% 100%; */
+    background-position: right;
+    padding: 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cl_presentation-information {
+    padding-top: 190px;
+    margin-left: 50px;
+    width: 40%;
+    position: relative;
+    z-index: 1;
+}
+
+.cl_presentation-information-name {
+    margin-bottom: 20px;
+}
+
+.cl_presentation-information-name h4 {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.cl_presentation-information-name h1 {
+    font-size: 60px;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    width: 0;
+    animation: escribir 3s steps(30) forwards;
+    /* font-family: "Ostrich Sans"; */
+    /* margin-top: 10px; */
+    /* letter-spacing: .08em; */
+}
+
+.cl_presentation-information-name h1::after {
+    content: "|";
+    color: white;
+    right: 0;
+    display: inline;
+    font-family: var(--mainFont);
+    font-size: 70px;
+    /* El cursor parpadeante */
+    animation: parpadear 1s infinite;
+    /* vertical-align: bottom; */
+}
+
+@keyframes escribir {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes parpadear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+.cl_presentation-information-welcome p {
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.cl_presentation-me {
+    position: absolute;
+    width: 45%;
+    right: 120px;
+    bottom: -5px;
+}
+
+.cl_presentation-me-photo {
+    width: 100%;
+}
+
+.cl_presentation-me-skill {
+    position: absolute;
+    background-color: #393939;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CSS */
+.cl_presentation-me-skill-css {
+    width: 70px;
+    height: 70px;
+    background-color: #17a1f7;
+    top: 50px;
+    right: 90px;
+}
+
+.cl_presentation-me-skill-css img {
+    width: 62%;
+    margin-top: 5px;
+}
+
+/* HTML */
+
+.cl_presentation-me-skill-html {
+    bottom: 110px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    background-color: #17a1f7;
+}
+
+.cl_presentation-me-skill-html img {
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Node */
+.cl_presentation-me-skill-nodejs {
+    width: 77px;
+    height: 75px;
+    top: 250px;
+    left: 50px;
+
+}
+
+.cl_presentation-me-skill-nodejs img {
+    width: 110%;
+}
+
+/* JS */
+.cl_presentation-me-skill-js {
+    width: 75px;
+    height: 75px;
+    right: 70px;
+    top: 210px;
+    background-color: #17a1f7;
+
+}
+
+.cl_presentation-me-skill-js img {
+    width: 50%;
+    margin-top: 5px;
+}
+
+/* React */
+.cl_presentation-me-skill-react {
+    width: 80px;
+    height: 80px;
+    bottom: 70px;
+    left: 20px;
+}
+
+.cl_presentation-me-skill-react img {
+    width: 65%;
+}
+
+/* Flutter */
+.cl_presentation-me-skill-flutter {
+    width: 70px;
+    height: 70px;
+    top: 100px;
+    left: 90px;
+
+}
+
+.cl_presentation-me-skill-flutter img {
+    width: 70%;
+}
+
+.cl_presentation-information-experience {
+    margin-top: 30px;
+    display: flex;
+    border: 2px solid rgb(97, 97, 97);
+    box-shadow: 1px 1px 10px 5px rgba(232, 232, 232, 0.082);
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 80%;
+}
+
+.cl_presentation-information-experience>div {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cl_presentation-information-experience>div:nth-child(1) {
+    border-right: 2px solid rgb(97, 97, 97);
+}
+
+.cl_presentation-information-experience>div p {
+    font-size: 14px;
+}
+
+.cl_presentation-information-experience>div p span {
+    font-weight: bold;
+}
+
+.cl_presentation-information-experience>div p:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 10px;
+}

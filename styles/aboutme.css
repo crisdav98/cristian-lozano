@@ -1,0 +1,127 @@
+#cl_aboutme {
+    background-color: #2f2f2f;
+    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 140vh;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%); */
+}
+
+/* .cl_aboutme-row{
+    display: flex;
+    justify-content: space-between;
+}
+.cl_aboutme-description{
+    width: 48%;
+}
+
+.cl_aboutme-image{
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+.cl_aboutme-image img{
+    width: 100%;
+    border-radius: 8px;
+}
+.cl_aboutme-description p{
+    font-size: 18px;
+    line-height: 1.8em;
+} */
+
+/*! opcionn 2 */
+#cl_aboutme>p {
+    width: 80%;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    margin-top: -10px;
+}
+
+.cl_aboutme-card {
+    position: relative;
+    border-radius: 8px;
+    /* box-shadow: 0 0 20px 20px rgba(206, 206, 206, 0.055); */
+    background-color: #3a3a3a;
+    width: 550px;
+    padding: 70px 50px;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    margin-left: 120px;
+}
+
+.cl_aboutme-card img {
+    width: 60%;
+    position: absolute;
+    left: -25%;
+    top: 20px;
+    border-radius: 8px;
+    filter: brightness(0.8)
+}
+
+.cl_aboutme-card-info {
+    width: 60%;
+}
+
+.cl_aboutme-card-info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.cl_aboutme-card-info p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+
+}
+
+.cl_aboutme-card-info hr {
+    margin-bottom: 20px;
+}
+
+.cl_aboutme-card-info-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cl_aboutme-card-info-buttons .cl_mainButton {
+    width: 50%;
+}
+
+.cl_aboutme-card-info-buttons .cl_secondButton {
+    width: 45%;
+}
+
+#cl_aboutme .cl_bgbox1 {
+    background-color: #0aa9ed14;
+    left: 20px;
+    right: inherit;
+    z-index: 1;
+}
+
+#cl_aboutme .cl_bgbox4 {
+    background-color: #0aa9ed14;
+    bottom: 30%;
+    top: inherit;
+}
+
+#cl_aboutme .cl_bgbox9 {
+    border-color: #0aa9ed14;
+    left: inherit;
+    right: 60px;
+}
+
+#cl_aboutme .cl_bgbox5 {
+    background-color: #0aa9ed14;
+    left: inherit;
+    right: 80px;
+    bottom: 40%;
+}

@@ -1,0 +1,28 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+footer > div:nth-child(1){
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+
+}
+.cl_footer-logo{
+    width: 30%;
+    margin-right: 30px;
+}
+.cl_footer-logo img{
+    width: 90%;
+}
+.cl_footer-reserved p{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.cl_footer-socials i{
+    font-size: 25px;
+    margin-right: 10px;
+}
