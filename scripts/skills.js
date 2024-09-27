@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     //    CSS Loader
     const skills = document.getElementsByClassName("cl_skills-circularProgress");
-    console.log(skills);
+    
     for (const skill of skills) {
         let progress;
         skill.addEventListener("mouseenter", () => {

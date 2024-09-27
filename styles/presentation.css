@@ -210,6 +210,7 @@
     width: 75px;
     height: 75px;
     background-color: #17a1f7;
+    z-index: 1;
 }
 
 .cl_presentation-me-skill-html img {
@@ -305,4 +306,155 @@
 .cl_presentation-information-experience>div p:nth-child(1) {
     font-size: 25px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1006px) {
+    .cl_presentation-me{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 868px) {
+    .cl_presentation-me{
+        width: 60%;
+        right: 0px;
+    }
+}
+@media screen and (max-width: 796px) {
+    .cl_presentation-information{
+        width: 75%;
+        margin-left: 20px;
+        padding-top: 90px;
+    }
+    #cl_presentation{
+        height: auto;
+    }
+    .cl_presentation-me{
+        bottom: inherit;
+        top: inherit;
+        right: inherit;
+        position: relative;
+        width: 80%;
+    }
+    .cl_presentation-me-skill-css, .cl_presentation-me-skill-js, .cl_presentation-me-skill-html{
+        background-color: #393939;
+    }
+}
+@media screen and (max-width: 796px) {
+    .cl_presentation-me-skill-nodejs{
+        width: 60px;
+        height: 60px;
+        top: 200px;
+    }
+    .cl_presentation-me-skill-react{
+        width: 65px;
+        height: 65px;
+        top: 300px;
+        bottom: inherit;
+    }
+    .cl_presentation-me-skill-js{
+        width: 65px;
+        height: 65px;
+        top: 150px;
+    }
+    .cl_presentation-me-skill-html{
+        width: 65px;
+        height: 65px;
+        bottom: inherit;
+        top: 250px;
+    }
+}
+@media screen and (max-width: 796px) {
+    .cl_presentation-me-skill-flutter{
+        width: 60px;
+        height: 60px;
+        left: 55px;
+    }
+    .cl_presentation-me-skill-css{
+        width: 60px;
+        height: 60px;
+        right: 55px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .cl_presentation-me{
+        width: 100%;
+        z-index: 1;
+    }
+    .cl_presentation-information-name h1{
+        font-size: 40px;
+    }
+    .cl_presentation-information{
+        width: 90%;
+    }
+    .cl_presentation-me-skill-css, .cl_presentation-me-skill-js, .cl_presentation-me-skill-html{
+        background-color: #17a1f7;
+    }
+}
+@media screen and (max-width: 475px) {
+    .cl_presentation-me{
+        width: 100%;
+    }
+    .cl_presentation-me-skill-css, .cl_presentation-me-skill-js, .cl_presentation-me-skill-html, .cl_presentation-me-skill-flutter, .cl_presentation-me-skill-nodejs, .cl_presentation-me-skill-react {
+        width: 55px;
+        height: 55px;
+    }
+    .cl_presentation-me-skill-js{
+        right: 50px;
+    }
+    .cl_presentation-me-skill-html{
+        right: 20px;
+    }
+}
+@media screen and (max-width: 405px) {
+    .cl_presentation-information-name h1{
+        font-size: 30px;
+        line-height: 1.1em;
+    }
+    .cl_presentation-information-name h1::after{
+        font-size: 32px;
+    }
+    .cl_presentation-information{
+        margin-left: 0;
+        width: 100%;
+    }
+    .cl_presentation-information-welcome p{
+        font-size: 16px;
+    }
+    .cl_presentation-information-experience{
+        width: 100%;
+    }
+    .cl_presentation-me-skill-css, .cl_presentation-me-skill-js, .cl_presentation-me-skill-html, .cl_presentation-me-skill-flutter, .cl_presentation-me-skill-nodejs, .cl_presentation-me-skill-react {
+        width: 50px;
+        height: 50px;
+    }
+    .cl_presentation-me-skill-flutter, .cl_presentation-me-skill-css{
+        top: 30px;
+    }
+    .cl_presentation-me-skill-nodejs, .cl_presentation-me-skill-js{
+        top: 120px;
+    }
+    .cl_presentation-me-skill-react, .cl_presentation-me-skill-html{
+        top: 200px;
+    }
+
+}
+@media screen and (max-width: 370px) {
+
+    .cl_presentation-me-skill-flutter{
+        left: 20px;
+    }
+    .cl_presentation-me-skill-nodejs{
+        left: 25px;
+    }
+    
+    .cl_presentation-me-skill-css{
+        right: 20px;
+    }
+    .cl_presentation-me-skill-js{
+        right: 22px;
+    }
+    .cl_presentation-me-skill-html{
+        right: 25px;
+    }
+
 }

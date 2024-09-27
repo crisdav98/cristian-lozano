@@ -16,7 +16,7 @@ footer > div:nth-child(1){
     margin-right: 30px;
 }
 .cl_footer-logo img{
-    width: 90%;
+    width: 140px;
 }
 .cl_footer-reserved p{
     font-size: 12px;
@@ -25,4 +25,33 @@ footer > div:nth-child(1){
 .cl_footer-socials i{
     font-size: 25px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 740px) {
+    footer > div:nth-child(1){
+        width: max-content;
+    }
+}
+@media screen and (max-width: 580px) {
+    footer {
+        flex-direction: column-reverse;
+    }
+    .cl_footer-socials{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer > div:nth-child(1){
+        width: 100%;
+        flex-direction: column;
+    }
+    .cl_footer-logo{
+        margin: auto;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    .cl_footer-logo img {
+        width: 180px;
+    }
 }

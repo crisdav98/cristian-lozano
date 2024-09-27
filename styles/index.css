@@ -15,9 +15,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: var(--secondFont);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     background-color: var(--secondColor);
     scroll-behavior: smooth;
+    /* max-width: 100%; */
 }
 
 button {
@@ -61,14 +62,15 @@ a {
     width: max-content;
     text-align: center;
 }
-.cl_sectionTitle::after{
+
+.cl_sectionTitle::after {
     content: "";
     display: block;
     height: 3px;
     width: 40%;
     background-color: var(--mainColor3);
     margin-top: 5px;
-    
+
 }
 
 .cl_mainButton {
@@ -98,11 +100,13 @@ a {
 .cl_secondButton:hover {
     background-color: var(--mainColorDark5);
 }
-.cl_highlighted{
+
+.cl_highlighted {
     position: relative;
     z-index: 2;
 }
-.cl_highlighted::after{
+
+.cl_highlighted::after {
     content: "";
     position: absolute;
     display: block;
@@ -114,6 +118,7 @@ a {
     left: 0;
     /* right: 0; */
 }
+
 /* Header Styles */
 header {
     background-color: transparent;
@@ -127,7 +132,8 @@ header {
     box-sizing: border-box;
     z-index: 2;
 }
-header.cl_scrolled{
+
+header.cl_scrolled {
     background-color: #262626;
 }
 
@@ -168,10 +174,46 @@ header nav ul li::after {
 
 }
 
-.cl_nav-active{
+.cl_nav-active {
     color: var(--mainColor1);
 }
 
 header nav ul li:hover::after {
     width: 100%;
+}
+
+@media screen and (max-width: 924px) {
+    header .cl_logo img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .cl_logo {
+        width: max-content;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header .cl_logo {
+        display: none;
+    }
+
+    header nav ul {
+        padding-inline-start: 0!important;
+    }
+    header nav ul li a{
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width: 360px) {
+    header {
+     display: none;
+    }
+
 }

@@ -125,3 +125,48 @@
     right: 80px;
     bottom: 40%;
 }
+
+@media screen and (max-width: 740px) {
+    .cl_aboutme-card{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 580px) {
+    #cl_aboutme{
+        height: auto;
+    }
+    .cl_aboutme-card{
+        flex-direction: column;
+        margin-left: 0;
+        padding: 20px 30px;
+    }
+    .cl_aboutme-card img{
+        position: relative;
+        left: inherit;
+        top: inherit;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .cl_aboutme-card-info{
+        /* margin: 10px auto 0 auto; */
+        margin-top: 10px;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 435px) {
+    #cl_aboutme>p{
+        width: 100%;
+        font-size: 16px;
+    }
+    .cl_aboutme-card{
+        width: 100%;
+    }
+    .cl_aboutme-card-info h2{
+        font-size: 22px;
+    }
+    .cl_aboutme-card-info p{
+        font-size: 16px;
+    }
+
+}

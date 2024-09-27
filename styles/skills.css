@@ -116,3 +116,35 @@
     right: 0;
     left: inherit;
 }
+
+@media screen and (max-width: 655px) {
+    .cl_skills-grid {
+        margin-top: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+}
+@media screen and (max-width: 515px) {
+   
+    .cl_skills-circularProgress{
+        width: 100px;
+        height: 100px;
+    }
+    .cl_skills-circularProgress img{
+        margin: auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    .cl_skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cl_skills-circularProgress{
+        width: 120px;
+        height: 120px;
+    }
+    .cl_skills-circularProgress img{
+        margin: auto;
+    }
+}

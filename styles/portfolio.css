@@ -217,3 +217,15 @@
     top: 15%;
     left: 190px;
 }
+
+@media screen and (max-width: 750px) {
+    .cl_portfolio-container{
+        flex-direction: column;
+    }
+    .cl_portfolio-container > div {
+        width: 100%;
+    }
+    .cl_portfolio-container-description{
+        margin-bottom: 20px;
+    }
+}
