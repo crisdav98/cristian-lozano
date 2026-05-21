@@ -123,6 +123,15 @@
     line-height: 1.5em;
 }
 
+.cl_presentation-eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mainColor1);
+    margin-bottom: 12px;
+}
+
 .cl_presentation-information-name h1 {
     font-size: 60px;
     white-space: nowrap;
@@ -188,34 +197,32 @@
     justify-content: center;
 }
 
-/* CSS */
-.cl_presentation-me-skill-css {
+/* TypeScript */
+.cl_presentation-me-skill-typescript {
     width: 70px;
     height: 70px;
-    background-color: #17a1f7;
+    background-color: #ffffff;
     top: 50px;
     right: 90px;
 }
 
-.cl_presentation-me-skill-css img {
-    width: 62%;
-    margin-top: 5px;
+.cl_presentation-me-skill-typescript img {
+    width: 75%;
 }
 
-/* HTML */
+/* Next.js */
 
-.cl_presentation-me-skill-html {
+.cl_presentation-me-skill-nextjs {
     bottom: 110px;
     right: 40px;
     width: 75px;
     height: 75px;
-    background-color: #17a1f7;
+    background-color: #ffffff;
     z-index: 1;
 }
 
-.cl_presentation-me-skill-html img {
+.cl_presentation-me-skill-nextjs img {
     width: 75%;
-    margin-top: 6px;
 }
 
 /* Node */
@@ -308,6 +315,21 @@
     margin-bottom: 10px;
 }
 
+.cl_presentation-information-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.cl_presentation-information-actions a.cl_ctaButton {
+    padding: 12px 22px;
+}
+
+.cl_presentation-information-actions a.cl_ctaButton i {
+    font-size: 18px;
+}
+
 @media screen and (max-width: 1006px) {
     .cl_presentation-me{
         width: 55%;
@@ -335,7 +357,7 @@
         position: relative;
         width: 80%;
     }
-    .cl_presentation-me-skill-css, .cl_presentation-me-skill-js, .cl_presentation-me-skill-html{
+    .cl_presentation-me-skill-js{
         background-color: #393939;
     }
 }
@@ -356,7 +378,7 @@
         height: 65px;
         top: 150px;
     }
-    .cl_presentation-me-skill-html{
+    .cl_presentation-me-skill-nextjs{
         width: 65px;
         height: 65px;
         bottom: inherit;
@@ -369,7 +391,7 @@
         height: 60px;
         left: 55px;
     }
-    .cl_presentation-me-skill-css{
+    .cl_presentation-me-skill-typescript{
         width: 60px;
         height: 60px;
         right: 55px;
@@ -386,7 +408,7 @@
     .cl_presentation-information{
         width: 90%;
     }
-    .cl_presentation-me-skill-css, .cl_presentation-me-skill-js, .cl_presentation-me-skill-html{
+    .cl_presentation-me-skill-js{
         background-color: #17a1f7;
     }
 }
@@ -394,14 +416,14 @@
     .cl_presentation-me{
         width: 100%;
     }
-    .cl_presentation-me-skill-css, .cl_presentation-me-skill-js, .cl_presentation-me-skill-html, .cl_presentation-me-skill-flutter, .cl_presentation-me-skill-nodejs, .cl_presentation-me-skill-react {
+    .cl_presentation-me-skill-typescript, .cl_presentation-me-skill-js, .cl_presentation-me-skill-nextjs, .cl_presentation-me-skill-flutter, .cl_presentation-me-skill-nodejs, .cl_presentation-me-skill-react {
         width: 55px;
         height: 55px;
     }
     .cl_presentation-me-skill-js{
         right: 50px;
     }
-    .cl_presentation-me-skill-html{
+    .cl_presentation-me-skill-nextjs{
         right: 20px;
     }
 }
@@ -423,17 +445,17 @@
     .cl_presentation-information-experience{
         width: 100%;
     }
-    .cl_presentation-me-skill-css, .cl_presentation-me-skill-js, .cl_presentation-me-skill-html, .cl_presentation-me-skill-flutter, .cl_presentation-me-skill-nodejs, .cl_presentation-me-skill-react {
+    .cl_presentation-me-skill-typescript, .cl_presentation-me-skill-js, .cl_presentation-me-skill-nextjs, .cl_presentation-me-skill-flutter, .cl_presentation-me-skill-nodejs, .cl_presentation-me-skill-react {
         width: 50px;
         height: 50px;
     }
-    .cl_presentation-me-skill-flutter, .cl_presentation-me-skill-css{
+    .cl_presentation-me-skill-flutter, .cl_presentation-me-skill-typescript{
         top: 30px;
     }
     .cl_presentation-me-skill-nodejs, .cl_presentation-me-skill-js{
         top: 120px;
     }
-    .cl_presentation-me-skill-react, .cl_presentation-me-skill-html{
+    .cl_presentation-me-skill-react, .cl_presentation-me-skill-nextjs{
         top: 200px;
     }
 
@@ -447,13 +469,13 @@
         left: 25px;
     }
     
-    .cl_presentation-me-skill-css{
+    .cl_presentation-me-skill-typescript{
         right: 20px;
     }
     .cl_presentation-me-skill-js{
         right: 22px;
     }
-    .cl_presentation-me-skill-html{
+    .cl_presentation-me-skill-nextjs{
         right: 25px;
     }
 

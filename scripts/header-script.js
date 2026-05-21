@@ -1,4 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
+    const yearEl = document.getElementById("cl_year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
     const sections = document.querySelectorAll("section"), navLinks = document.querySelectorAll("nav ul li a");
 
     const resetLinks = () => navLinks.forEach(link => link.classList.remove("cl_nav-active"));

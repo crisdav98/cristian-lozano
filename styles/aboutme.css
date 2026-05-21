@@ -6,7 +6,7 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    height: 600px;
+    min-height: 600px;
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%); */
 }
 

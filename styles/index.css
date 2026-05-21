@@ -3,6 +3,7 @@
 @import "./presentation.css";
 @import "./aboutme.css";
 @import "./services.css";
+@import "./experience.css";
 @import "./skills.css";
 @import "./portfolio.css";
 @import "./testimonials.css";
@@ -86,6 +87,30 @@ a {
     padding: 10px;
     color: var(--mainColor2);
     background-color: transparent;
+}
+
+a.cl_ctaButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform 0.15s ease;
+}
+
+a.cl_ctaButton:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+a.cl_mainButton.cl_ctaButton:hover {
+    background: linear-gradient(135deg, var(--mainColor3) 0%, var(--mainColor1) 100%);
+}
+
+a.cl_secondButton.cl_ctaButton:hover {
+    background-color: var(--mainColorDark5);
 }
 
 .cl_mainButton:hover,
