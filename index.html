@@ -107,17 +107,19 @@
 <body>
     <!-- Encabezado -->
     <header>
-        <div class="cl_logo">
-            <img src="assets/logo/logo-white.png" alt="cristian Lozano">
-        </div>
-        <nav>
+        <a href="#cl_presentation" class="cl_logo" aria-label="Inicio">
+            <img src="assets/logo/logo-white.png" alt="Cristian Lozano">
+        </a>
+        <button class="cl_menu-toggle" aria-label="Abrir menú" aria-controls="cl_nav" aria-expanded="false">
+            <i class="ri-menu-line"></i>
+        </button>
+        <nav id="cl_nav" aria-label="Navegación principal">
             <ul>
                 <li><a data-scroll="cl_aboutme" href="#cl_aboutme">Sobre Mí</a></li>
                 <li><a data-scroll="cl_experience" href="#cl_experience">Experiencia</a></li>
                 <li><a data-scroll="cl_skills" href="#cl_skills">Habilidades</a></li>
                 <li><a data-scroll="cl_portfolio" href="#cl_portfolio">Portafolio</a></li>
                 <li><a data-scroll="cl_testimonials" href="#cl_testimonials">Testimonios</a></li>
-                <!-- <li><a data-scroll="cl_contact" href="#cl_contact">Contacto</a></li> -->
             </ul>
         </nav>
     </header>
@@ -192,6 +194,7 @@
 
             <img src="assets/image/cristian.webp" alt="Cristian Lozano" class="cl_presentation-me-photo">
         </div>
+        <div class="cl_scroll-hint" aria-hidden="true">Scroll</div>
     </section>
 
     <!-- Sección Acerca de mi-->
@@ -200,16 +203,16 @@
         <div class="cl_bgbox4 cl_geometry"></div>
         <div class="cl_bgbox9 cl_geometry"></div>
         <div class="cl_bgbox5 cl_geometry"></div>
-        <h3 class="cl_sectionTitle">Sobre Mí</h3>
+        <h3 class="cl_sectionTitle cl_reveal">Sobre Mí</h3>
 
-        <p>Llevo <span class="cl_highlighted">6 años</span> desarrollando aplicaciones web y móviles que escalan a
+        <p class="cl_reveal">Llevo <span class="cl_highlighted">6 años</span> desarrollando aplicaciones web y móviles que escalan a
             producción. Mi enfoque está en construir interfaces mantenibles con
             <span class="cl_highlighted">React, React Native y Next.js</span>, donde la arquitectura, el tipado
             estricto en TypeScript y la optimización de rendimiento marcan la diferencia. Actualmente colaboro en
             productos <span class="cl_highlighted">fintech para Diners Club Ecuador</span>, participando en code
             reviews, decisiones técnicas y definición de estándares de calidad.</p>
 
-        <div class="cl_aboutme-card">
+        <div class="cl_aboutme-card cl_reveal">
             <img src="assets/image/developer2.webp" alt="programming">
             <div class="cl_aboutme-card-info">
                 <h2>Cristian Lozano</h2>
@@ -226,8 +229,8 @@
 
     <!-- Experiencia -->
     <section id="cl_experience">
-        <h3 class="cl_sectionTitle">Experiencia</h3>
-        <div class="cl_experience-timeline">
+        <h3 class="cl_sectionTitle cl_reveal">Experiencia</h3>
+        <div class="cl_experience-timeline cl_reveal">
 
             <article class="cl_experience-item cl_experience-item--current">
                 <div class="cl_experience-dot"></div>
@@ -421,9 +424,9 @@
         <div class="cl_bgbox8 cl_geometry"></div>
         <div class="cl_bgbox3 cl_geometry"></div>
         <div class="cl_bgbox4 cl_geometry"></div>
-        <h3 class="cl_sectionTitle">Habilidades</h3>
+        <h3 class="cl_sectionTitle cl_reveal">Habilidades</h3>
 
-        <div class="cl_skills-categories">
+        <div class="cl_skills-categories cl_reveal">
             <div class="cl_skills-category">
                 <h4 class="cl_skills-categoryTitle">Frontend Core</h4>
                 <div class="cl_skills-list">
@@ -471,14 +474,14 @@
         <div class="cl_bgbox9 cl_geometry"></div>
         <div class="cl_bgbox7 cl_geometry"></div>
         <div class="cl_portfolio-container">
-            <div class="cl_portfolio-container-description">
+            <div class="cl_portfolio-container-description cl_reveal">
                 <h3 class="cl_sectionTitle">Proyectos seleccionados</h3>
                 <p>Selección de productos en los que he liderado o contribuido al desarrollo frontend. Incluye un
                     case study fintech, plataformas SaaS con IA, sistemas marketplace y aplicaciones móviles a
                     producción.</p>
             </div>
 
-            <div class="cl_portfolio-projects">
+            <div class="cl_portfolio-projects cl_reveal">
 
                 <!-- Diners Club blu2.0 — Case Study destacado -->
                 <article class="cl_portfolio-project cl_portfolio-project--featured cl_portfolio-bluefintech">
@@ -659,8 +662,8 @@
 
     <!-- Testimonios -->
     <section id="cl_testimonials">
-        <h3 class="cl_sectionTitle">Testimonios</h3>
-        <div class="cl_testimonials-container">
+        <h3 class="cl_sectionTitle cl_reveal">Testimonios</h3>
+        <div class="cl_testimonials-container cl_reveal">
 
             <!--
             ====================================================================
@@ -805,11 +808,15 @@
             </div>
         </div>
         <div class="cl_footer-socials">
-            <a href="https://github.com/crisdav98" target="_blank"><i class="ri-github-fill"></i></a>
-            <a href="https://www.linkedin.com/in/cristian-lozano-4bb51b1b6/" target="_blank"><i
+            <a href="https://github.com/crisdav98" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/cristian-lozano-4bb51b1b6/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
                     class="ri-linkedin-box-fill"></i></a>
         </div>
     </footer>
+
+    <button class="cl_scroll-top" aria-label="Volver arriba" type="button">
+        <i class="ri-arrow-up-line"></i>
+    </button>
 </body>
 
 </html>

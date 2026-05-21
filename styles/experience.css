@@ -1,5 +1,5 @@
 #cl_experience {
-    padding: 60px 40px 100px 40px;
+    padding: 80px 40px 100px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,25 +11,26 @@
 .cl_experience-timeline {
     width: 100%;
     position: relative;
-    padding-left: 30px;
-    margin-top: 20px;
+    padding-left: 36px;
+    margin-top: 24px;
 }
 
 .cl_experience-timeline::before {
     content: "";
     position: absolute;
     left: 7px;
-    top: 8px;
+    top: 12px;
     bottom: 8px;
     width: 2px;
     background: linear-gradient(to bottom,
-            rgba(122, 213, 254, 0.5) 0%,
-            rgba(122, 213, 254, 0.15) 100%);
+            var(--mainColor1) 0%,
+            rgba(122, 213, 254, 0.4) 50%,
+            rgba(122, 213, 254, 0.05) 100%);
 }
 
 .cl_experience-item {
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .cl_experience-item:last-child {
@@ -38,46 +39,76 @@
 
 .cl_experience-dot {
     position: absolute;
-    left: -30px;
-    top: 8px;
+    left: -36px;
+    top: 14px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
     background: var(--mainColor);
     border: 3px solid var(--secondColor);
-    box-shadow: 0 0 0 2px rgba(10, 169, 237, 0.3);
-    z-index: 1;
+    box-shadow: 0 0 0 2px rgba(10, 169, 237, 0.35),
+                0 0 12px rgba(10, 169, 237, 0.4);
+    z-index: 2;
+    transition: transform 0.25s var(--easeBounce);
+}
+
+.cl_experience-item:hover .cl_experience-dot {
+    transform: scale(1.2);
 }
 
 .cl_experience-item--current .cl_experience-dot {
     background: var(--greenColor);
-    box-shadow: 0 0 0 2px rgba(0, 199, 169, 0.3);
+    box-shadow: 0 0 0 2px rgba(0, 199, 169, 0.35),
+                0 0 16px rgba(0, 199, 169, 0.5);
     animation: cl_experience-pulse 2.4s ease-in-out infinite;
 }
 
 @keyframes cl_experience-pulse {
-
-    0%,
-    100% {
-        box-shadow: 0 0 0 2px rgba(0, 199, 169, 0.3);
+    0%, 100% {
+        box-shadow: 0 0 0 2px rgba(0, 199, 169, 0.35),
+                    0 0 12px rgba(0, 199, 169, 0.3);
     }
-
     50% {
-        box-shadow: 0 0 0 6px rgba(0, 199, 169, 0.15);
+        box-shadow: 0 0 0 8px rgba(0, 199, 169, 0.1),
+                    0 0 20px rgba(0, 199, 169, 0.5);
     }
 }
 
 .cl_experience-card {
-    background-color: #333;
-    border: 1px solid rgba(122, 213, 254, 0.12);
-    border-radius: 10px;
-    padding: 20px 24px;
-    transition: transform 0.18s ease, border-color 0.18s ease;
+    background: var(--gradientGlass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--borderSubtle);
+    border-radius: var(--radiusLg);
+    padding: 22px 26px;
+    transition: transform 0.25s var(--easeOut),
+                border-color 0.25s var(--easeOut),
+                box-shadow 0.25s var(--easeOut);
+    position: relative;
+    overflow: hidden;
+}
+
+.cl_experience-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--gradientBrand);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s var(--easeOut);
 }
 
 .cl_experience-card:hover {
-    transform: translateX(2px);
-    border-color: rgba(122, 213, 254, 0.35);
+    transform: translateX(4px);
+    border-color: var(--borderHover);
+    box-shadow: var(--shadowMd);
+}
+
+.cl_experience-card:hover::before {
+    transform: scaleY(1);
 }
 
 .cl_experience-header {
@@ -86,22 +117,34 @@
     align-items: baseline;
     gap: 12px;
     flex-wrap: wrap;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .cl_experience-company {
     font-size: 18px;
-    color: white;
+    color: var(--textPrimary);
     margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.01em;
 }
 
 .cl_experience-date {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--mainColor1);
     white-space: nowrap;
+    background: rgba(52, 192, 252, 0.1);
+    border: 1px solid rgba(52, 192, 252, 0.2);
+    padding: 4px 10px;
+    border-radius: var(--radiusFull);
+}
+
+.cl_experience-item--current .cl_experience-date {
+    color: var(--greenColor);
+    background: rgba(0, 199, 169, 0.1);
+    border-color: rgba(0, 199, 169, 0.25);
 }
 
 .cl_experience-meta {
@@ -121,15 +164,22 @@
 
 .cl_experience-location {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.55);
+    color: var(--textMuted);
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .cl_experience-context {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0 0 12px 0;
+    color: var(--textSecondary);
+    margin: 0 0 14px 0;
     font-style: italic;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.025);
+    border-left: 2px solid var(--mainColor2);
+    border-radius: 0 var(--radiusSm) var(--radiusSm) 0;
 }
 
 .cl_experience-bullets {
@@ -140,11 +190,11 @@
 
 .cl_experience-bullets li {
     position: relative;
-    padding-left: 18px;
+    padding-left: 22px;
     font-size: 14px;
-    line-height: 1.55em;
-    color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 6px;
+    line-height: 1.6;
+    color: var(--textSecondary);
+    margin-bottom: 8px;
 }
 
 .cl_experience-bullets li::before {
@@ -152,10 +202,10 @@
     position: absolute;
     left: 0;
     top: 8px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
+    width: 12px;
+    height: 2px;
     background: var(--mainColor2);
+    border-radius: var(--radiusFull);
 }
 
 .cl_experience-bullets li:last-child {
@@ -163,27 +213,27 @@
 }
 
 .cl_experience-education .cl_experience-card {
-    background-color: transparent;
+    background: transparent;
     border-style: dashed;
 }
 
 @media screen and (max-width: 600px) {
     #cl_experience {
-        padding: 50px 20px 80px 20px;
+        padding: 60px 20px 80px 20px;
     }
 
     .cl_experience-timeline {
-        padding-left: 24px;
+        padding-left: 28px;
     }
 
     .cl_experience-dot {
-        left: -24px;
+        left: -28px;
         width: 14px;
         height: 14px;
     }
 
     .cl_experience-card {
-        padding: 16px 18px;
+        padding: 18px 18px;
     }
 
     .cl_experience-company {
@@ -191,6 +241,6 @@
     }
 
     .cl_experience-date {
-        font-size: 11px;
+        font-size: 10px;
     }
 }

@@ -1,5 +1,5 @@
 #cl_skills {
-    padding: 60px 40px 120px 40px;
+    padding: 80px 40px 120px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,82 +10,133 @@
 
 .cl_skills-categories {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 24px;
 }
 
 .cl_skills-category {
     width: 100%;
+    background: var(--gradientGlass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--borderSubtle);
+    border-radius: var(--radiusLg);
+    padding: 24px 26px;
+    transition: border-color 0.3s var(--easeOut),
+                transform 0.3s var(--easeOut);
+}
+
+.cl_skills-category:hover {
+    border-color: var(--borderHover);
+    transform: translateY(-2px);
 }
 
 .cl_skills-categoryTitle {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--mainColor1);
     margin-bottom: 18px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(122, 213, 254, 0.2);
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(122, 213, 254, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cl_skills-categoryTitle::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: var(--mainColor1);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--mainColor1);
 }
 
 .cl_skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 10px;
 }
 
 .cl_skill {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 10px;
-    background-color: #333;
-    border: 1px solid rgba(122, 213, 254, 0.15);
-    border-radius: 10px;
-    padding: 10px 16px;
-    transition: transform 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--borderSubtle);
+    border-radius: var(--radiusMd);
+    padding: 10px 14px;
+    transition: transform 0.2s var(--easeOut),
+                border-color 0.2s var(--easeOut),
+                background-color 0.2s var(--easeOut),
+                box-shadow 0.2s var(--easeOut);
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.cl_skill::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 30%, rgba(122, 213, 254, 0.18) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s var(--easeOut);
+    z-index: -1;
 }
 
 .cl_skill:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     border-color: var(--mainColor1);
-    background-color: #3a3a3a;
+    background-color: rgba(52, 192, 252, 0.06);
+    box-shadow: 0 6px 20px rgba(10, 169, 237, 0.18);
     cursor: default;
 }
 
+.cl_skill:hover::before {
+    transform: translateX(100%);
+}
+
 .cl_skill img {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     object-fit: contain;
+    transition: transform 0.3s var(--easeBounce);
+}
+
+.cl_skill:hover img {
+    transform: scale(1.15) rotate(-4deg);
 }
 
 .cl_skill i {
-    font-size: 22px;
+    font-size: 20px;
     color: var(--mainColor1);
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .cl_skill span {
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
+    color: var(--textPrimary);
+    font-size: 13px;
+    font-weight: 600;
     white-space: nowrap;
 }
 
 #cl_skills .cl_bgbox6 {
-    background-color: #0aa9ed14;
+    background-color: rgba(10, 169, 237, 0.08);
     bottom: inherit;
     top: -50px;
 }
 
 #cl_skills .cl_bgbox5 {
-    background-color: #0aa9ed14;
+    background-color: rgba(10, 169, 237, 0.08);
     width: 60px;
     bottom: 10px;
     left: 30px;
@@ -93,7 +144,7 @@
 }
 
 #cl_skills .cl_bgbox8 {
-    border-color: #0aa9ed14;
+    border-color: rgba(10, 169, 237, 0.18);
     left: inherit;
     right: 30px;
     bottom: inherit;
@@ -101,23 +152,38 @@
 }
 
 #cl_skills .cl_bgbox3 {
-    background-color: #0aa9ed14;
+    background-color: rgba(10, 169, 237, 0.06);
     width: 160px;
     top: -100px;
     left: 0;
 }
 
 #cl_skills .cl_bgbox4 {
-    background-color: #0aa9ed14;
+    background-color: rgba(10, 169, 237, 0.08);
     top: inherit;
     bottom: 30px;
     right: 0;
     left: inherit;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
     .cl_skills-categories {
-        gap: 30px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #cl_skills {
+        padding: 60px 24px 80px 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #cl_skills {
+        padding: 60px 20px 80px 20px;
+    }
+
+    .cl_skills-category {
+        padding: 20px 20px;
     }
 
     .cl_skill {
@@ -127,12 +193,12 @@
 
     .cl_skill img,
     .cl_skill i {
-        width: 20px;
-        height: 20px;
-        font-size: 18px;
+        width: 18px;
+        height: 18px;
+        font-size: 17px;
     }
 
     .cl_skill span {
-        font-size: 13px;
+        font-size: 12px;
     }
 }

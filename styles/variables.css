@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap');
-/* @import url(""); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
 @font-face {
     font-family: 'Ostrich Sans';
-    src: url('../assets/fonts/OstrichSans-Bold.otf')   
+    src: url('../assets/fonts/OstrichSans-Bold.otf');
+    font-display: swap;
 }
-:root{
+
+:root {
+    /* === Tipografía === */
     --nameFont: "Ostrich Sans";
     --mainFont: 'Montserrat', sans-serif;
     --secondFont: 'Raleway', sans-serif;
+
+    /* === Paleta principal === */
     --mainColor: #0aa9ed;
     --mainColor1: #34c0fc;
     --mainColor2: #7bd5fe;
@@ -19,8 +24,52 @@
     --mainColorDark3: #055b87;
     --mainColorDark4: #0a4b70;
     --mainColorDark5: #07304a;
-    --secondColor: #272727;
+    --secondColor: #1a1a1a;
+    --bgElevated: #232323;
+    --bgElevated2: #2a2a2a;
+    --bgCard: rgba(255, 255, 255, 0.04);
+    --bgCardHover: rgba(255, 255, 255, 0.07);
+    --borderSubtle: rgba(255, 255, 255, 0.08);
+    --borderHover: rgba(122, 213, 254, 0.35);
+    --textPrimary: #ffffff;
+    --textSecondary: rgba(255, 255, 255, 0.78);
+    --textMuted: rgba(255, 255, 255, 0.55);
     --greenColor: #00C7A9;
     --orangeColor: #FF9900;
 
+    /* === Gradientes === */
+    --gradientBrand: linear-gradient(135deg, #34c0fc 0%, #0aa9ed 100%);
+    --gradientBrandSoft: linear-gradient(135deg, rgba(52, 192, 252, 0.15) 0%, rgba(10, 169, 237, 0.08) 100%);
+    --gradientText: linear-gradient(135deg, #7bd5fe 0%, #ffffff 60%, #34c0fc 100%);
+    --gradientGlass: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+    --gradientHero: radial-gradient(circle at 80% 50%, rgba(10, 169, 237, 0.18) 0%, transparent 50%),
+                    radial-gradient(circle at 20% 80%, rgba(52, 192, 252, 0.12) 0%, transparent 50%);
+
+    /* === Sombras === */
+    --shadowSm: 0 2px 6px rgba(0, 0, 0, 0.18);
+    --shadowMd: 0 8px 24px rgba(0, 0, 0, 0.28);
+    --shadowLg: 0 16px 48px rgba(0, 0, 0, 0.4);
+    --shadowGlow: 0 0 32px rgba(52, 192, 252, 0.25);
+    --shadowGlowSoft: 0 0 16px rgba(52, 192, 252, 0.12);
+
+    /* === Radius === */
+    --radiusSm: 6px;
+    --radiusMd: 10px;
+    --radiusLg: 16px;
+    --radiusXl: 24px;
+    --radiusFull: 999px;
+
+    /* === Easings === */
+    --easeOut: cubic-bezier(0.16, 1, 0.3, 1);
+    --easeInOut: cubic-bezier(0.65, 0, 0.35, 1);
+    --easeBounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* === Tipografía fluida === */
+    --fsXs: clamp(11px, 0.7vw + 0.5rem, 13px);
+    --fsSm: clamp(13px, 0.5vw + 0.7rem, 15px);
+    --fsBase: clamp(15px, 0.4vw + 0.8rem, 17px);
+    --fsLg: clamp(18px, 0.6vw + 0.9rem, 20px);
+    --fsXl: clamp(22px, 1vw + 1rem, 28px);
+    --fs2xl: clamp(28px, 2vw + 1rem, 40px);
+    --fsHero: clamp(40px, 5vw + 1rem, 72px);
 }
